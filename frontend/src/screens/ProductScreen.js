@@ -38,7 +38,7 @@ function ProductScreen({ match }) {
                 <Row>
                   <Col>Price</Col>
                   <Col>
-                    <string>${product.price}</string>
+                    <strong>${product.price}</strong>
                   </Col>
                 </Row>
               </ListGroup.Item>
