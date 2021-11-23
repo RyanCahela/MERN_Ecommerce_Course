@@ -5,3 +5,11 @@ main {
 .rating > * + * {
   padding-left: 0.1rem;
 }
+
+.product__title {
+  text-decoration: none;
+}
+
+.product:hover .product__title {
+  text-decoration: underline;
+}
