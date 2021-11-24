@@ -55,8 +55,11 @@ const destroyData = async () => {
 };
 
 if (process.argv[2] === "-d") {
-  //WARNING: This will delete the entire database
+  //WARNING: This will delete the entire database, DO NOT UNCOMMENT
+  //unless your name is Ryan and you know what you are doing...
   //destroyData();
 } else {
-  importData();
+  //WARNING: This will delete the entire database, DO NOT UNCOMMENT
+  //unless your name is Ryan and you know what you are doing...
+  // importData();
 }
