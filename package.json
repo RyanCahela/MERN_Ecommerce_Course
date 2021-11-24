@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "MERN Shopping Cart App",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
@@ -20,8 +21,10 @@
   },
   "homepage": "https://github.com/RyanCahela/MERN_Ecommerce_Course#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13"
   },
   "devDependencies": {
     "concurrently": "^6.4.0",
