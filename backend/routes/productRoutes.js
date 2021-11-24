@@ -10,6 +10,9 @@ router.get(
   "/",
   asyncHandler(async (req, res) => {
     const products = await Product.find({});
+    // for error testing on frontend
+    // res.status(401); for error
+    // throw new Error("Not Authorized");
     res.json(products);
   })
 );
