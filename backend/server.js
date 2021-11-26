@@ -34,3 +34,15 @@ app.listen(
     `Server running in ${process.env.NODE_ENV} on PORT: ${PORT}`.yellow.bold
   )
 );
+
+//to prevent nodemon from throwing errors about port already in use.
+if (process.NODE_ENV === "development") {
+  process.once("SIGUSR2", function () {
+    process.kill(process.pid, "SIGUSR2");
+  });
+
+  process.on("SIGINT", function () {
+    // this is only called on ctrl+c, not restart
+    process.kill(process.pid, "SIGINT");
+  });
+}
